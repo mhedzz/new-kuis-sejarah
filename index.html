@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Sejarah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+<body>
+
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE6983"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Coding2go</a></li>
+      <li class="hideOnMobile"><a href="#">Blog</a></li>
+      <li class="hideOnMobile"><a href="#">Products</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Forum</a></li>
+      <li class="hideOnMobile"><a href="#">Login</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE6983"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="header-title">
+        <h2>Kuis Sejarah Indonesia</h2>
+        <p>Mainkan Kuis Sejarah Indonesia dan dapatkan hadiah menarik, Serta Pelajari Materi Sejarah Indonesia!</p>
+        <div class="header-button-container">
+          <a href="quiz.html" class="header-button">Mulai</a>
+          <a href="blog.html" class="header-button">Pelajari</a>
+        </div>
+      </div>
+      <div class="header-image">
+        <img src="https://images.unsplash.com/photo-1473163928189-364b2c4e1135?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Header Image">
+      </div>
+    </div>
+  </header>
+
+  <div class="feature">
+    <div class="feature-title">
+      <h1>Fitur Kami</h1>
+    </div>
+    <div class="feature-container">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-circle-question" style="color: #EE6983;"></i></div>
+        <h2>Mainkan Kuis</h2>
+        <p>Tes kemampuan sejarah Indonesia dengan kuis kami yang menarik dan bervariasi</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-book-open" style="color: #EE6983;"></i></div>
+        <h2>Rangkuman Materi</h2>
+        <p>Pelajari sejarah Indonesia dari rangkuman materi yang tersedia</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-image" style="color: #EE6983;"></i></div>
+        <h2>Foto Bersejarah</h2>
+        <p>Pelajari peristiwa bersejarah Indonesia dengan foto slider kami</p>
+      </div>
+    </div>
+  </div>
+
+  <quiz-page class="quiz-page">
+    <h1 class="quiz-page-title">Quiz</h1>
+    <div class="quiz-page-container">
+      <div class="card-kiri">
+        <div class="quiz-page-card">
+          <div class="quiz-card-image"><img src="https://assets-a1.kompasiana.com/items/album/2024/05/01/pasca-kemerdekaan-6632371b5460615e18174462.jpeg" alt="Perjuangan Mempertahankan Kemerdekaan"></div>
+          <div class="quiz-card-title">
+            <h2>Perjuangan Mempertahankan Kemerdekaan</h2>
+            <p>Tes pengentahuanmu di Bab 1 anda dalam materi memperjuangkan kemerdekaan Indonesia pasca kemerdekaan</p>
+          </div>
+          <div class="quiz-card-button">
+            <a href="quizbab1.html" class="quiz-button">Mulai Sekarang</a>
+            <i class="fa-solid fa-arrow-right" style="color: #EE6983;"></i>
+          </div>
+        </div>
+        <div class="quiz-page-card">
+          <div class="quiz-card-image"><img src="https://realitarakyat.com/wp-content/uploads/2022/01/f79f67713aad44f4979478a510df21c6-e1649345196499.png" alt="Masa Demokrasi Terpimpin"> </div>
+          <div class="quiz-card-title">
+            <h2>Masa Demokrasi Terpimpin</h2>
+            <p>Tes pengentahuanmu di Bab 2 anda dalam materi masa Demokrasi Terpimpin</p>
+          </div>
+          <div class="quiz-card-button">
+            <a href="quizbab2.html" class="quiz-button">Mulai Sekarang</a>
+            <i class="fa-solid fa-arrow-right" style="color: #EE6983;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card-kanan">
+        <div class="quiz-page-card">
+          <div class="quiz-card-image"><img src="https://asset.kompas.com/crops/nIe9Wr45l4UfH_jIfqoajBOcM58=/0x0:750x500/1200x800/data/photo/2021/12/03/61a975fcbc46a.jpg" alt="Peralihan Menuju Orde Baru"> </div>
+          <div class="quiz-card-title">
+            <h2>Peralihan Menuju Orde Baru</h2>
+            <p>Tes pengentahuanmu di Bab 3 anda dalam materi pergantian menuju orde baru</p>
+          </div>
+          <div class="quiz-card-button">
+            <a href="quizbab3.html" class="quiz-button">Mulai Sekarang</a>
+            <i class="fa-solid fa-arrow-right" style="color: #EE6983;"></i>
+          </div>
+        </div>
+        <div class="quiz-page-card">
+          <div class="quiz-card-image"><img src="https://mmc.tirto.id/image/2023/05/13/antarafoto-1998-05-19-a04-reformasi-menyeluruh-spt_ratio-16x9.jpg" alt="Masa Reformasi"></div>
+          <div class="quiz-card-title">
+            <h2>Masa Reformasi</h2>
+            <p>Tes pengentahuanmu di Bab 4 anda dalam materi masa Demokrasi Terpimpin</p>
+          </div>
+          <div class="quiz-card-button">
+            <a href="quizbab4.html" class="quiz-button">Mulai Sekarang</a>
+            <i class="fa-solid fa-arrow-right" style="color: #EE6983;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </quiz-page>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
