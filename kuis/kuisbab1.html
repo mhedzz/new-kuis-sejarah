@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MySkyPower / CREATIVE PRODUCTION GROUP We are the producers of your ideas. The workshop – the craftsmen – the designers – the engineers. Together we are one. One group of talented people who harness the power to build big ideas. From handmade to high- tech. With you we create. Bring us your ideas, designs, and dreams and we will build them. Whatever the scale. EVERY DAY WE BUILD BIG IDEAS We are MySkyPower." />
+    <meta property="og:title" content="My Sky Power | MSP />
+    <meta property="og:description" content="MySkyPower / CREATIVE PRODUCTION GROUP We are the producers of your ideas. The workshop – the craftsmen – the designers – the engineers. Together we are one. One group of talented people who harness the power to build big ideas. From handmade to high- tech. With you we create. Bring us your ideas, designs, and dreams and we will build them. Whatever the scale. EVERY DAY WE BUILD BIG IDEAS We are MySkyPower." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.myskypower.net/" />
+
+    <title>Kuis BAB 1</title>
+    <link rel="stylesheet" href="kuistes.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE6983"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Quiz</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Logo Website</a></li>
+          <li class="hideOnMobile"><a href="#">Blog</a></li>
+          <li class="hideOnMobile"><a href="#">Quiz</a></li>
+          <li class="hideOnMobile"><a href="#">About</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE6983"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Anda diberi <span>25 Detik</span> untuk setiap pertanyaan.</div>
+            <div class="info">2. Ketika anda menjawab suatu pertanyaan, anda tidak dapat mengubah jawabannya.</div>
+            <div class="info">3. Anda tidak bisa menjawab setelah waktu habis.</div>
+            <div class="info">4. Anda tidak bisa keluar dari kuis sebelum menjawab semua pertanyaan.</div>
+            <div class="info">5. Anda akan mendapat 1 poin setiap menjawab dengan benar.</div>
+        </div>
+        <div class="buttons">
+            <a href="../index.html"><button class="quit">Keluar Kuis</button></a>
+            <button class="restart">Mulai</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Kuis Sejarah</div>
+            <div class="timer">
+                <div class="time_left_txt">Sisa Waktu</div>
+                <div class="timer_sec">25</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Lanjut</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Anda Telah Menyelesaikan Kuisnya!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Mainkan Kembali</button>
+            <button class="quit">Keluar</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="soalbab1.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="script.js"></script>
+
+</body>
+</html>
