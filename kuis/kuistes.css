@@ -343,6 +343,7 @@ footer button.show{
 
 .result_box .complete_text{
     font-size: 20px;
+    text-align: center;
     font-weight: 500;
 }
 
@@ -434,6 +435,7 @@ footer button.show{
     footer button {
         font-size: 16px;
     }
+    
 }
 
 /* For mobile devices (480px to 767px) */
@@ -509,4 +511,11 @@ footer button.show{
     .quiz_box header .timer{
         width: 160px;
     }
+    .result_box .score_text span{
+        font-size: 16px;
+
+    }
+
+
+
 }
