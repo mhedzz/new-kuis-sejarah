@@ -83,6 +83,13 @@ nav li:first-child{
     display: none;
 }
 
+.web-logo {
+    width: 100%;
+    height: auto;
+    width: 50px;
+    height: 50px;
+}
+
 .header-container{
     display: flex;
     flex-direction: row;
